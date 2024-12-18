@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel & Culture Guide</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="banner d-flex align-items-center justify-content-between">
+    <div>
+      <a href="index.html">
+        <img src="images/logo.webp" alt="Website Logo" class="logo">
+      </a>
+    </div>
+    <h1 class="header-style">Explore the World's Best Destinations</h1>
+    <span id="user-display" class="user-display"></span>
+  </header>
+
+  <nav class="navbar-style navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <h1 class="navbar-brand">Travel & Culture Guide</h1>
+      <button class="navbar-button navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item me-2">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item me-2">
+            <a class="nav-link" href="rome_guide.html">Rome</a>
+          </li>
+          <li class="nav-item me-2">
+            <a class="nav-link" href="japan_guide.html">Japan</a>
+          </li>
+          <li class="nav-item me-2">
+            <a class="nav-link active" href="#">Thailand</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <img src="images/home-page.png" class="img-fluid d-block mx-auto image-main" alt="home page"
+            onclick="openImageModal(this.src)">
+        </div>
+        <div class="col-md-6">
+          <p class="recipe-intro">Welcome to the Travel and Culture Guide! Explore the most iconic destinations: Italy's
+            Rome, the beauty of
+            Japan,
+            and the wonders of Thailand. Start your journey now!</p>
+        </div>
+      </div>
+      <div class="row">
+        <h2 class="header-style">Our Featured Destinations</h2>
+      </div>
+      <table class="table table-striped text-center">
+        <thead>
+          <tr>
+            <th>Location</th>
+            <th>Image</th>
+            <th>Description</th>
+            <th>Link</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Rome, Italy</td>
+            <td><img src="images/rome.png" alt="Rome" class="attraction-image" onclick="openImageModal(this.src)"></td>
+            <td>Discover the heart of ancient Rome, from the Colosseum to Vatican City.</td>
+            <td><a href="rome_guide.html" class="btn btn-primary">Explore</a></td>
+          </tr>
+          <tr>
+            <td>Japan</td>
+            <td><img src="images/japan-city.png" alt="Mount Fuji" class="attraction-image"
+                onclick="openImageModal(this.src)"></td>
+            <td>Explore Mount Fuji, cherry blossoms, and Tokyo's vibrant culture.</td>
+            <td><a href="japan_guide.html" class="btn btn-primary">Explore</a></td>
+          </tr>
+          <tr>
+            <td>Thailand</td>
+            <td><img src="images/thailand-bangkok.jpg" alt="Thailand Temple" class="attraction-image"
+                onclick="openImageModal(this.src)"></td>
+            <td>Immerse yourself in Thailand's golden temples and tropical beaches.</td>
+            <td><a href="thailand_guide.html" class="btn btn-primary">Explore</a></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="card text-center p-4 dark-card">
+        <h2 class="mb-3">Join Our Community!</h2>
+        <p class="mb-4">Sign up today to access personalized features, stay updated with the latest
+          content, and join our vibrant community.</p>
+        <a href="registration.html" class="btn btn-primary">Register Now</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer mt-auto py-3 border-top">
+    <div class="container footer-text">
+      <p>&copy; 2024 Travel & Culture Guide by Dimitry Gallego</p>
+      <p>Contact: <a href="mailto:gallegodimitry@gmail.com">gallegodimitry@gmail.com</a></p>
+    </div>
+  </footer>
+  <div id="image-modal" class="image-modal" onclick="closeImageModal()">
+    <img id="modal-image" src="" alt="Enlarged view">
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
